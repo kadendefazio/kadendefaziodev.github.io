@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Vividly';
+    src: url('Vividly-Regular.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'TrashHand';
+    src: url('TrashHand.TTF') format('truetype'); 
+}
+@font-face {
+    font-family: 'PIXEL';
+    src: url('PIXEL-LI.TTF') format('truetype'); 
+}
+body{
+
+    background: linear-gradient(to right, #001f3f, #005f82);
+    text-align: right;
+    min-height:100vh;
+
+}
+.tabs{
+    color:white;
+    font-family: "Monospace", sans-serif;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.tabs a {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    transition: color 0.3s ease; /* Transition effect for the text color */
+}
+
+.tabs a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    
+    transition: width 0.3s ease; /* Transition effect for the width */
+}
+
+.tabs a:hover::before {
+    width: 100%; /* Width expands to 100% when hovering */
+}
+
+.tabs a:hover {
+    color: lightgrey; /* Change text color when hovering */
+}
+
+.name {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-family: "Monospace", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.description {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 54%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: "Vividly", sans-serif;
+    font-size: 25px;
+    
+    
+}
+.description a {
+    text-decoration: none; 
+    color: inherit; 
+}
+.description a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    
+    transition: width 0.3s ease; /* Transition effect for the width */
+}
+
+.description a:hover::before {
+    width: 100%; /* Width expands to 100% when hovering */
+}
+
+.description a:hover {
+    color: lightgrey; /* Change text color when hovering */
+}
+footer {
+    background-color:rgba(128, 128, 128, 0.5);
+    background-opacity:50%;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.projects {
+    background-image: url("backdropForBox.png"); 
+    color: #333; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 600px;
+    border-radius: 10px; 
+    border: 4px solid grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+}
+
+.projects h3 {
+    text-align:left;
+    margin-top: 0; 
+    font-family: "Vividly", sans-serif;
+    font-size: 25px;
+  
+}
+.projects p{
+  font-weight:bold;
+}
+
+.projects a {
+    font-family: "Vividly", sans-serif;
+    color: black;
+    text-decoration: none; 
+    text-align:left;
+    font-weight: bold;
+    margin-top: 0; 
+    font-size:30px;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+.pdf{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px
+    border: 10px solid grey;
+    border-radius:10px
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1); 
+}
+.contact{
+    background-image: url("backdropForBox.png"); 
+    color: #333; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 600px;
+    border-radius: 10px; 
+    border: 4px solid grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+}
+.contact h3{
+    text-align:center;
+    font-family: "Vividly", sans-serif;
+    font-size: 2.5em;
+
+}
+.email {
+    color: black;
+    text-decoration: none; 
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0; 
+    font-size: 2.5em;
+    font-family: "Vividly", sans-serif;
+}
+.email a {
+    text-align: left;
+}
+.aboutME {
+    background-image: url("backdropForBox.png"); 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 800px;
+    border: 7px solid grey;
+    border-radius: 10px;
+    text-align:center;
+    color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1); 
+   
+
+}
+.aboutME2 {
+   
+    display: block; /* Ensures that margin:auto works */
+    margin: 0 auto;
+    border: 7px solid grey;
+    border-radius: 10px;
+    text-align:center;
+    color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1); 
+}
